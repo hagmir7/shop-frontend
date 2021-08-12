@@ -1,0 +1,160 @@
+* {
+    font-family: 'dubai'!important;
+    font-weight: bold;
+    letter-spacing: .5px;
+}
+
+.out-line-none:focus{
+    outline: none!important;
+}
+
+.form-control:focus {
+    color: #212529;
+    background-color: #fff;
+    border-color: #86b7fe;
+    outline: 0;
+    box-shadow: none;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+
+    /* Put a card in the next row when previous cards take all width */
+}
+
+.cards__item {
+/* There will be 4 cards per row */
+    width: 20%;
+    margin: 0;
+
+    
+}
+.product-img{
+    height: 223px;
+    width: 100%;
+    border-bottom: 1px solid #8080806b;
+    
+}
+
+.product-img img{
+    width: 100%;
+    object-fit: contain;
+    height: 100%;
+
+}
+
+.product-title{
+    overflow: hidden;
+    padding: 2px;
+}
+.card-content{
+    box-shadow: 0px 2px 4px rgb(0 0 0 / 29%), 0px 0px 7px 2px rgb(0 0 0 / 16%);
+    background-color: white;
+    border-radius: 2px;
+    overflow: hidden;
+    margin: 3px;
+}
+
+.product-more{
+    
+    padding: 2px 10px;
+    position: absolute;
+    background: #ced4da;
+    cursor: pointer;
+
+}
+
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    
+  }
+  
+  
+  
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  .dropdown:hover .dropdown-content {display: block;}
+.dropdown-menu li{
+    border-radius: 5px;
+}
+.dropdown-menu li:hover{
+    background-color: #ced4da;
+    border-radius: 5px;
+}
+#search{
+    display: none;
+    height: 30px;
+}
+#open-search{
+    cursor: pointer;
+    user-select: none;
+    
+}
+
+
+/* X-Large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) { 
+    
+}
+
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) { 
+    
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1150px) { 
+    .cards__item {
+        /* There will be 4 cards per row */
+        width: 25%;
+        
+    }
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) { 
+    .cards__item {
+        /* There will be 4 cards per row */
+        width: 33.33%;
+        
+        
+    }
+    .mean-menu{
+        text-align: center;
+    padding: 10px;
+    border-bottom: 1px solid gainsboro;
+    }
+}
+
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 700px) { 
+    .cards__item {
+        /* There will be 4 cards per row */
+        width: 50%;
+        
+    }
+    .hide-700{
+        display: none!important;
+    }
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 380px) { 
+    .cards__item {
+        /* There will be 4 cards per row */
+        width: 100%;
+    }
+
+}
